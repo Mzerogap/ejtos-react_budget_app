@@ -72,7 +72,8 @@ export const AppReducer = (state, action) => {
                     ...state,
                     remaining
                 }
-            } else if (state.budget < state.expenses) {
+            } 
+            if (state.budget < state.expenses) {
                 alert("Youcannot reduce the budget value lower than the spending");
                 return {
                     ...state
